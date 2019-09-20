@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dist
+dist
+
+# Dependency directories
+node_modules
+
+# vscode
+.vscode

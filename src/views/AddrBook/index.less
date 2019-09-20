@@ -1,0 +1,50 @@
+.con {
+    width    : 100%;
+    max-width: 800px;
+    margin   : 0 auto;
+    height   : calc(100vh - 7rem);
+    overflow : hidden;
+
+    .title {
+        border-bottom: 1px solid rgb(96, 148, 109);
+        padding      : 0.2rem;
+        margin       : 0;
+        font-size    : 1rem;
+    }
+
+    ul {
+        margin : .2rem 0;
+        padding: 1rem;
+
+        &.studentsList {
+            height    : calc(100% - 7rem);
+            overflow-y: auto;
+        }
+
+        li {
+            display      : flex;
+            text-align   : center;
+            border-bottom: 1px solid rgb(215, 232, 216);
+            padding      : .2rem 0;
+
+            .id {
+                width: 2rem;
+            }
+
+            .name {
+                width: 3rem;
+            }
+
+            .middle {
+                width        : calc(100% - 13rem);
+                margin       : 0.7rem 1rem;
+                height       : 1px;
+                border-bottom: 1px dashed #333;
+            }
+
+            .phone {
+                width: 6rem;
+            }
+        }
+    }
+}
