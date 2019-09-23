@@ -2,11 +2,10 @@
  * @Description: 影集
  * @Author: zpl
  * @Date: 2019-09-18 18:18:07
- * @LastEditTime: 2019-09-20 11:29:17
+ * @LastEditTime: 2019-09-22 21:58:29
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { Provider, connect } from 'react-redux'
 
 import AlbumComp from '@/Components/AlbumComp'
@@ -45,10 +44,6 @@ class Comp extends Component {
                     <button onClick={() => this.onClick2()}>点击2秒后+1</button>
                 </div>
                 <div className='albumList'></div>
-                <footer>
-                    {/* <Link className='left' to="/">{"<<"}</Link> */}
-                    <Link className='right' to="/AddrBook/">{">>"}</Link>
-                </footer>
             </div>
         )
     }

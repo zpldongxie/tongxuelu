@@ -2,11 +2,10 @@
  * @Description: 通讯录
  * @Author: zpl
  * @Date: 2019-09-18 18:24:50
- * @LastEditTime: 2019-09-20 09:43:44
+ * @LastEditTime: 2019-09-22 21:59:01
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import addressBook from '@/doc/addressBook'
 import './index.less'
@@ -50,7 +49,6 @@ export default class AddrBook extends Component {
                         }
                     </ul>
                 </div>
-                <footer><Link className='left' to="/">{"<<"}</Link><Link className='right' to="/Story/">{">>"}</Link></footer>
             </div>
         )
     }
