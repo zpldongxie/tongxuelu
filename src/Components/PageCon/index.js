@@ -2,12 +2,13 @@
  * @Description: 页面容器，负责控制多个页面之前的切换
  * @Author: zpl
  * @Date: 2019-09-22 19:19:01
- * @LastEditTime: 2019-09-22 22:07:49
+ * @LastEditTime: 2019-09-23 16:43:23
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+import './index.less';
 import { nextPage, prevPage, gotoPage } from '../../actions/pageConAction'
 
 import Cover from '@/views/Cover'
@@ -64,9 +65,11 @@ class Comp extends Component {
 
         return (
             <div>
-                {prevPageDom}
-                {currentPageDom}
-                {nextPageDom}
+                <div className='middleCon'>
+                    <div className='prevPageCon'>{prevPageDom}</div>
+                    <div className='currentPageCon'>{currentPageDom}</div>
+                    <div className='nextPageCon'>{nextPageDom}</div>
+                </div>
                 <footer>
                     {goPrevPageDom}
                     {goNextPageDom}

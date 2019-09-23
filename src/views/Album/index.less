@@ -1,1 +1,26 @@
-.albumList {}
+.albumList {
+    position: absolute;
+    top: calc((100vh - 60vw) / 2);
+    left: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    .albumCon {
+        width: 20vw;
+        height: 20vw;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .albumList {
+        left: 2vw;
+        top: calc((100vh - 90vw) / 3);
+        width: 90vw;
+        .albumCon {
+            width: 30vw;
+            height: 30vw;
+            padding: 5px;
+        }
+    }
+}

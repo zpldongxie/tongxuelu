@@ -2,8 +2,8 @@
  * @Description: webpack.config
  * @Author: zpl
  * @Date: 2019-09-18 21:45:22
- * @LastEditTime: 2019-09-19 20:18:26
- * @LastEditors: zpl
+ * @LastEditTime: 2019-09-23 14:49:15
+ * @LastEditors: Please set LastEditors
  */
 const path = require('path');
 const webpack = require('webpack')
@@ -26,7 +26,7 @@ const devServer = {
     hot: true, // 热替换
     contentBase: path.join(__dirname, 'dist'), // server文件的根目录
     compress: true, // 开启gzip
-    host: '192.168.31.200',
+    host: 'localhost',
     port: 8080, // 端口
     historyApiFallback: true
 };
