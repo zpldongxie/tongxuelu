@@ -2,7 +2,7 @@
  * @Description: 影集
  * @Author: zpl
  * @Date: 2019-09-18 18:18:07
- * @LastEditTime: 2019-09-25 14:45:43
+ * @LastEditTime: 2019-09-25 16:52:47
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -41,6 +41,12 @@ class Comp extends Component {
         const { showBigImg, bigImg } = this.props;
         return (
             <div>
+                <h2 style={{
+                    padding: '0 1rem',
+                    fontFamily: 'cursive',
+                    color: '#333',
+                    margin: '0.6rem 0'
+                }}>我们的风采!</h2>
                 <CSSTransition
                     in={showBigImg}
                     timeout={1000}
