@@ -2,11 +2,14 @@
  * @Description: 
  * @Author: zpl
  * @Date: 2019-09-19 20:31:21
- * @LastEditTime: 2019-09-19 21:00:12
+ * @LastEditTime: 2019-09-25 15:08:16
  * @LastEditors: zpl
  */
 export default {
-    "classTeacher": "蒋湘凤",
+    "classTeacher": {
+        "name": "蒋湘凤",
+        "phone": "13892602889"
+    },
     "students": [
         {
             "id": 1,

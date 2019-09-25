@@ -2,18 +2,89 @@
  * @Description: 幻灯片影集
  * @Author: zpl
  * @Date: 2019-09-20 11:04:24
- * @LastEditTime: 2019-09-24 14:10:41
+ * @LastEditTime: 2019-09-25 15:05:59
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { showBigImg, hideBigImg } from '../../actions/albumAction'
 
 import './index.less'
 
-export default class Comp extends Component {
+class AlbumComp extends Component {
+    state = {
+        ...this.props,
+        showIndex: 0,
+        pause: false,
+        interval: null
+    }
+
+    showNextImg() {
+        const { picList, showIndex } = this.state;
+        if (showIndex === picList.length - 1) {
+            this.setState({ showIndex: 0 })
+        } else {
+            this.setState({ showIndex: showIndex + 1 })
+        }
+    }
+
+    showBigImg(bigImg) {
+        this.setState({ pause: true })
+        this.props.dispatch(showBigImg(bigImg));
+    }
+
+    hideBigImg() {
+        this.props.dispatch(hideBigImg());
+    }
+
+    componentDidMount() {
+        clearInterval(this.interval)
+        this.interval = setInterval(() => {
+            if (this.props.showBigImg) {
+                clearInterval(this.interval)
+            }
+            this.showNextImg()
+        }, 3000);
+    }
+
+    componentDidUpdate(){
+        if(!this.props.showBigImg){
+            clearInterval(this.interval)
+            this.interval = setInterval(() => {
+                if (this.props.showBigImg) {
+                    clearInterval(this.interval)
+                }
+                this.showNextImg()
+            }, 3000);
+        }
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
     render() {
-        const { picList, showBigImg } = this.props;
-        return <div className='imgCon' onClick={() => { showBigImg(picList[0]) }}>
-            <div style={{ backgroundImage: `url(${picList[0]})` }}></div>
+        const { picList, isTeacher, showIndex } = this.state;
+        return <div className='albumCompCon'>
+            {
+                isTeacher ?
+                    <div className='bg' style={{ borderRadius: '100%' }}>
+                        <div className='bg1'>
+                            <div className='img' style={{ backgroundImage: `url(${picList[showIndex]})` }}></div>
+                        </div>
+                    </div> :
+                    <div className='bg'>
+                        <div className='img' style={{ backgroundImage: `url(${picList[showIndex]})` }}></div>
+                    </div>
+            }
+            <div className={isTeacher ? 'bordTch' : 'bord'} onClick={() => { this.showBigImg(picList[showIndex]) }}></div>
         </div>
     }
 }
+
+export default connect(
+    state => ({
+        bigImg: state.bigImg,
+        showBigImg: state.showBigImg,
+    })
+)(AlbumComp);

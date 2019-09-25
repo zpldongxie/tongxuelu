@@ -2,7 +2,7 @@
  * @Description: 影集
  * @Author: zpl
  * @Date: 2019-09-18 18:18:07
- * @LastEditTime: 2019-09-24 18:29:03
+ * @LastEditTime: 2019-09-25 14:45:43
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -18,8 +18,11 @@ import { showBigImg, hideBigImg } from '../../actions/albumAction'
 
 const studentsRequireContext = require.context("@/images/students", true, /^\.\/.*\.(png|jpg)$/);
 const studentsImages = studentsRequireContext.keys().map(studentsRequireContext);
-const imgList = splitArray(studentsImages, 8);
-
+const teacherRequireContext = require.context("@/images/teacher", true, /^\.\/.*\.(png|jpg)$/);
+const teacherImages = teacherRequireContext.keys().map(teacherRequireContext);
+let imgList = splitArray(studentsImages, 8);
+let teacherImgs = splitArray(teacherImages, 1);
+imgList.splice(4, 0, teacherImgs[0]);
 
 class Comp extends Component {
     constructor(props) {
@@ -38,21 +41,31 @@ class Comp extends Component {
         const { showBigImg, bigImg } = this.props;
         return (
             <div>
-                <div className={`albumList ${showBigImg ? 'hide' : 'show'}`}>
-                    {imgList.map((imgArr, index) => {
-                        return <div className='albumCon'><AlbumComp key={index} picList={imgArr} showBigImg={(bigImg) => { this.showBigImg(bigImg) }} /></div>
-                    })}
-                </div>
                 <CSSTransition
-                    classNames="fade"
                     in={showBigImg}
-                    timeout={500}
+                    timeout={1000}
+                    classNames='fade'
+                    unmountOnExit
+                    appear={true}
                 >
-                    <div
-                        style={{ backgroundImage: `url(${bigImg})` }}
-                        className={`showBigImg${showBigImg ? ' show' : ' hide'}`}
-                        onClick={() => { this.hideBigImg() }}
-                    ></div>
+                    <div className={`showBigImg`}>
+                        <div
+                            style={{ backgroundImage: `url(${bigImg})` }}
+                            onClick={() => { this.hideBigImg() }}
+                        ></div>
+                    </div>
+                </CSSTransition>
+                <CSSTransition
+                    in={true}
+                    timeout={1000}
+                    classNames='fade'
+                    appear={true}
+                >
+                    <div className={`albumList`}>
+                        {imgList.map((imgArr, index) => {
+                            return <div className='albumCon'><AlbumComp key={index} picList={imgArr} isTeacher={index === 4} /></div>
+                        })}
+                    </div>
                 </CSSTransition>
             </div>
         )

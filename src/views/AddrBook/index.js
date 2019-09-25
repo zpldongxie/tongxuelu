@@ -2,7 +2,7 @@
  * @Description: 通讯录
  * @Author: zpl
  * @Date: 2019-09-18 18:24:50
- * @LastEditTime: 2019-09-22 21:59:01
+ * @LastEditTime: 2019-09-25 15:28:34
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -35,10 +35,8 @@ export default class AddrBook extends Component {
                 }}>老同学，常联系～</h2>
                 <div className='con'>
                     <h3 className='title'>班主任</h3>
-                    <ul>
-                        <li>
-                            {addressBook.classTeacher}
-                        </li>
+                    <ul className='teacher'>
+                        <Addr item={addressBook.classTeacher} />
                     </ul>
                     <h3 className='title'>同学录</h3>
                     <ul className='studentsList'>
