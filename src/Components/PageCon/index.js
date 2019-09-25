@@ -17,20 +17,7 @@ import Album from '@/views/Album'
 import AddrBook from '@/views/AddrBook'
 import Storys from '@/views/Storys'
 
-// const getPage = (pageName) => {
-//     switch (pageName) {
-//         case 'Cover':
-//             return <Cover />
-//         case 'Album':
-//             return <Album />
-//         case 'AddrBook':
-//             return <AddrBook />
-//         case 'Storys':
-//             return <Storys />
-//         default:
-//             return ''
-//     }
-// }
+import { bling } from '../../util'
 
 class Comp extends Component {
     constructor(props) {
@@ -45,20 +32,26 @@ class Comp extends Component {
         } = this.props;
         const pageLength = pageList.length;
 
-        // const prevPageDom = pageIndex > 0 ? getPage(pageList[pageIndex - 1]) : 'none';
-        // const currentPageDom = getPage(pageName);
-        // const nextPageDom = pageIndex < pageLength - 1 ? getPage(pageList[pageIndex + 1]) : 'none';
-
         const goPrevPageDom = (() => {
             if (pageIndex > 0) {
-                return <a className='left' onClick={() => { this.props.dispatch(prevPage()) }}>{'<<'}</a>
+                return <a
+                    className='left'
+                    onClick={() => {
+                        bling(event.target, 0.3);
+                        this.props.dispatch(prevPage())
+                    }}></a>
             } else {
                 return ''
             }
         })()
         const goNextPageDom = (() => {
             if (pageIndex < pageLength - 1) {
-                return <a className='right' onClick={() => { this.props.dispatch(nextPage()) }}>{'>>'}</a>
+                return <a
+                    className='right'
+                    onClick={() => {
+                        bling(event.target, 0.3);
+                        this.props.dispatch(nextPage())
+                    }}></a>
             } else {
                 return ''
             }
@@ -106,9 +99,6 @@ class Comp extends Component {
                         </CSSTransition>
                     </div>
                 }
-                {/* <div className='prevPageCon'>{prevPageDom}</div> */}
-                {/* <div className='currentPageCon'>{currentPageDom}</div> */}
-                {/* <div className='nextPageCon'>{nextPageDom}</div> */}
 
                 <footer>
                     {goPrevPageDom}

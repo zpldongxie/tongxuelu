@@ -26,13 +26,13 @@ export default class AddrBook extends Component {
     render() {
         return (
             <div className='route'>
-                <h2 style={{
+                <h3 style={{
                     padding: '0 1rem',
                     fontFamily: 'cursive',
                     color: '#333',
                     margin: '0.6rem 0',
                     textAlign: 'right'
-                }}>老同学，常联系～</h2>
+                }}>老同学，常联系～</h3>
                 <div className='con'>
                     <h3 className='title'>班主任</h3>
                     <ul className='teacher'>

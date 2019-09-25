@@ -30,6 +30,20 @@ export const splitArray = (arr, num) => {
     for (let i = 0; i < newArray.length; i += subArrLen) {
         returnArray.push(newArray.slice(i, i + subArrLen));
     }
-    
+
     return returnArray;
+}
+
+/**
+ * 闪烁效果
+ *
+ * @param {Dom} dom dom对象
+ * @param {Number} time 闪烁动画时长，单位为秒
+ */
+export const bling = (dom, time) => {
+    dom.style.transition = `all ${time * 1000}ms ease-in-out`;
+    dom.style.opacity = 1;
+    setTimeout(() => {
+        dom.style.opacity = .5;
+    }, time * 1000);
 }

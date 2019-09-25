@@ -41,12 +41,7 @@ class Comp extends Component {
         const { showBigImg, bigImg } = this.props;
         return (
             <div>
-                <h2 style={{
-                    padding: '0 1rem',
-                    fontFamily: 'cursive',
-                    color: '#333',
-                    margin: '0.6rem 0'
-                }}>我们的风采!</h2>
+                <h3 className='albumTitle'>我们的风采!</h3>
                 <CSSTransition
                     in={showBigImg}
                     timeout={1000}

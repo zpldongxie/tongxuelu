@@ -55,7 +55,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
             {
-                test: /\.png|jpeg|jpg$/,
+                test: /\.png|jpeg|jpg|mp3$/,
                 use: ['file-loader']
             }
         ]

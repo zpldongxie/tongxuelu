@@ -1,46 +1,58 @@
+.albumTitle {
+    padding: 0 1rem;
+    font-family: cursive;
+    color: #333;
+    margin: 2.6rem 11rem;
+}
+
 .albumList {
-    position : absolute;
-    display  : flex;
+    position: absolute;
+    display: flex;
     flex-wrap: wrap;
-    top      : 50%;
-    left     : 50%;
+    top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width    : 75vh;
+    width: 75vh;
 
     .albumCon {
-        width  : 25vh;
-        height : 25vh;
+        width: 25vh;
+        height: 25vh;
         padding: 10px;
     }
 }
 
 .showBigImg {
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    width           : 100vw;
-    height          : 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-image: url(../../images/bg.jpg);
-    z-index         : 1;
+    z-index: 1;
 
     div {
-        height             : 100vh;
+        height: 100vh;
         background-position: center;
-        background-repeat  : no-repeat;
-        background-size    : contain;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .albumTitle {
+        // display: none;
+        position: fixed;
+        top: 50%;
+        margin: -58vw 0 0;
+        right: 1rem;
+    }
+
     .albumList {
-        top      : 50%;
-        left     : 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width    : 90vw;
+        width: 90vw;
 
         .albumCon {
-            width  : 30vw;
-            height : 30vw;
+            width: 30vw;
+            height: 30vw;
             padding: 5px;
         }
     }

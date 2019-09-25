@@ -11,7 +11,7 @@ export default class Story extends Component {
     render() {
         return (
             <div className='route'>
-                <h2>留下你的故事</h2>                
+                <h3>留下你的故事</h3>                
             </div>
         )
     }

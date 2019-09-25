@@ -1,0 +1,31 @@
+.route {
+    h3 {
+        padding: 0 1rem;
+        font-family: cursive;
+        color: #000;
+        margin: 10% 0 0;
+        text-indent: 2em;
+        text-shadow: 2px 2px 2px rgba(216, 216, 115, 1);
+
+        &+img {
+            display: block;
+            height: calc(100vh - 20rem);
+            margin: 2rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .route {
+        h3 {
+            margin: 40% 0 0;
+            color: #666;
+            text-shadow: none;
+
+            &+img {
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+}
