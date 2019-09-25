@@ -15,7 +15,7 @@ export default class Cover extends React.Component {
         return (
             <div className='route'>
                 <h3>
-                    <span>校园的点点滴滴，仿佛发生在昨日，那些年的回忆，是我一生的瑰宝感，谢有你陪伴……</span>
+                    <span>校园的点点滴滴，仿佛发生在昨日。那些年的回忆，是我一生的瑰宝，感谢有你陪伴……</span>
                     <div style={{ textAlign: 'right', marginTop: '2em' }}>致：9710的伙伴们</div>
                 </h3>
                 <img src={heying} />
