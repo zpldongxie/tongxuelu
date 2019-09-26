@@ -2,8 +2,8 @@
  * @Description: webpack.config
  * @Author: zpl
  * @Date: 2019-09-18 21:45:22
- * @LastEditTime: 2019-09-23 14:49:15
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2019-09-26 12:10:50
+ * @LastEditors: zpl
  */
 const path = require('path');
 const webpack = require('webpack')
@@ -28,6 +28,7 @@ const devServer = {
     compress: true, // 开启gzip
     host: 'localhost',
     port: 8080, // 端口
+    publicPath: '/',
     historyApiFallback: true
 };
 // HMR允许在运行时更新各种模块，而无需进行完全刷新
@@ -38,7 +39,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'), // 定义输出目录
         filename: 'tong-xue-lu.bundle.js', // 定义输出文件名称
-        publicPath: '/'
+        publicPath: './'
     },
     mode: 'development',
     module: {
