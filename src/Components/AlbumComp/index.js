@@ -2,7 +2,7 @@
  * @Description: 幻灯片影集
  * @Author: zpl
  * @Date: 2019-09-20 11:04:24
- * @LastEditTime: 2019-09-27 18:50:28
+ * @LastEditTime: 2019-09-27 19:25:04
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -77,7 +77,7 @@ class AlbumComp extends Component {
                         <div className='img' style={{ backgroundImage: `url(${picList[showIndex].pic})` }}></div>
                     </div>
             }
-            <div className={isTeacher ? 'bordTch' : 'bord'} onClick={() => { this.showBigImg(picList[showIndex]) }}></div>
+            <div className={isTeacher ? 'bordTch' : 'bord'} onClick={() => { this.showBigImg(picList[showIndex].pic) }}></div>
         </div>
     }
 }
