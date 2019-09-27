@@ -2,11 +2,11 @@
  * @Description: 全局常量
  * @Author: zpl
  * @Date: 2019-09-27 17:36:50
- * @LastEditTime: 2019-09-27 18:45:51
+ * @LastEditTime: 2019-09-27 19:14:09
  * @LastEditors: zpl
  */
 export const IMGS = {
-    'heying': 'https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/heying.jpg?Expires=1569582481&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=uF6%2FdbKym89h8YmVsZK%2Fbz9ctLM%3D',
+    'heying': 'https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/heying.jpg',
     students: [
         {
             "id": 1,
