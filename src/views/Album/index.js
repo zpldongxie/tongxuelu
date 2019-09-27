@@ -2,13 +2,14 @@
  * @Description: 影集
  * @Author: zpl
  * @Date: 2019-09-18 18:18:07
- * @LastEditTime: 2019-09-25 16:52:47
+ * @LastEditTime: 2019-09-27 18:49:55
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
 import { Provider, connect } from 'react-redux'
 import { CSSTransition } from 'react-transition-group'
 
+import { IMGS } from '@/common/constant'
 import { splitArray } from '@/util'
 import AlbumComp from '@/Components/AlbumComp'
 
@@ -16,12 +17,20 @@ import './index.less'
 import albumStore from '@/store/albumStore'
 import { showBigImg, hideBigImg } from '../../actions/albumAction'
 
-const studentsRequireContext = require.context("@/images/students", true, /^\.\/.*\.(png|jpg)$/);
-const studentsImages = studentsRequireContext.keys().map(studentsRequireContext);
-const teacherRequireContext = require.context("@/images/teacher", true, /^\.\/.*\.(png|jpg)$/);
-const teacherImages = teacherRequireContext.keys().map(teacherRequireContext);
+// const studentsRequireContext = require.context("@/images/students", true, /^\.\/.*\.(png|jpg)$/);
+// const studentsImages = studentsRequireContext.keys().map(studentsRequireContext);
+// const teacherRequireContext = require.context("@/images/teacher", true, /^\.\/.*\.(png|jpg)$/);
+// const teacherImages = teacherRequireContext.keys().map(teacherRequireContext);
+let studentsImages = [];
+IMGS.students.map(student => {
+    if (student.pic && student.pic !== '') {
+        studentsImages.push(student);
+    }
+});
+
 let imgList = splitArray(studentsImages, 8);
-let teacherImgs = splitArray(teacherImages, 1);
+// let teacherImgs = splitArray(teacherImages, 1);
+let teacherImgs = splitArray(IMGS.teacher, 1);
 imgList.splice(4, 0, teacherImgs[0]);
 
 class Comp extends Component {

@@ -2,7 +2,7 @@
  * @Description: webpack.config
  * @Author: zpl
  * @Date: 2019-09-18 21:45:22
- * @LastEditTime: 2019-09-26 12:10:50
+ * @LastEditTime: 2019-09-27 17:57:07
  * @LastEditors: zpl
  */
 const path = require('path');
@@ -18,7 +18,8 @@ const dirs = {
 
 const htmlPlugin = new HtmlWebPackPlugin({
     template: './index.html',
-    filename: path.resolve(__dirname, 'dist/index.html')
+    filename: path.resolve(__dirname, 'dist/index.html'),
+    favicon: './favicon.ico'
 });
 
 // 开发虚拟服务器，支持热更新

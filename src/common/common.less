@@ -1,0 +1,85 @@
+@import './constant.less';
+
+* {
+    box-sizing: border-box;
+}
+
+div,
+ul {
+
+    /*滚动条样式*/
+    &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 2px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius     : 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background        : rgba(0, 0, 0, 0.2);
+    }
+
+    &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius     : 0;
+        background        : rgba(0, 0, 0, 0.1);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/*入场动画开始*/
+.fade-enter {
+    opacity: 0;
+}
+
+/*入场动画过程*/
+.fade-enter-active {
+    opacity   : 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/*入场动画结束*/
+.fade-enter-done {
+    opacity: 1;
+}
+
+/*离场动画开始*/
+.fade-exit {
+    opacity: 1;
+}
+
+/*离场动画过程*/
+.fade-exit-active {
+    opacity   : 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/*离场动画结束*/
+.fade-exit-done {
+    opacity: 0;
+}
+
+/*页面第一次加载时的开始状态*/
+.fade-appear {
+    opacity: 0;
+}
+
+/*页面第一次加载时的动画过程*/
+.fade-appear-active {
+    opacity   : 1;
+    transition: opacity 1s ease-in;
+}
+
+body {
+    margin          : 0;
+    padding         : 0;
+    background-image: url(@bg);
+    font-size: 16px;
+}

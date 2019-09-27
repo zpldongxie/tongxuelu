@@ -2,7 +2,7 @@
  * @Description: 幻灯片影集
  * @Author: zpl
  * @Date: 2019-09-20 11:04:24
- * @LastEditTime: 2019-09-25 15:05:59
+ * @LastEditTime: 2019-09-27 18:50:28
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -70,11 +70,11 @@ class AlbumComp extends Component {
                 isTeacher ?
                     <div className='bg' style={{ borderRadius: '100%' }}>
                         <div className='bg1'>
-                            <div className='img' style={{ backgroundImage: `url(${picList[showIndex]})` }}></div>
+                            <div className='img' style={{ backgroundImage: `url(${picList[showIndex].pic})` }}></div>
                         </div>
                     </div> :
                     <div className='bg'>
-                        <div className='img' style={{ backgroundImage: `url(${picList[showIndex]})` }}></div>
+                        <div className='img' style={{ backgroundImage: `url(${picList[showIndex].pic})` }}></div>
                     </div>
             }
             <div className={isTeacher ? 'bordTch' : 'bord'} onClick={() => { this.showBigImg(picList[showIndex]) }}></div>
