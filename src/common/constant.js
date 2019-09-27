@@ -2,7 +2,7 @@
  * @Description: 全局常量
  * @Author: zpl
  * @Date: 2019-09-27 17:36:50
- * @LastEditTime: 2019-09-27 19:14:09
+ * @LastEditTime: 2019-09-27 19:39:32
  * @LastEditors: zpl
  */
 export const IMGS = {
@@ -21,7 +21,7 @@ export const IMGS = {
         {
             "id": 3,
             "name": "唐华喜",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%94%90%E5%8D%8E%E5%96%9C.jpg?Expires=1569583718&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=eTUra45clbtjpL3bGBe9gIe%2F3RU%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%94%90%E5%8D%8E%E5%96%9C.jpg"
         },
         {
             "id": 4,
@@ -41,7 +41,7 @@ export const IMGS = {
         {
             "id": 7,
             "name": "张紫和",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%BC%A0%E7%B4%AB%E5%92%8C.jpg?Expires=1569583736&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=VlZah23fTSYhlMOYGb3qwD3GD8A%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%BC%A0%E7%B4%AB%E5%92%8C.jpg"
         },
         {
             "id": 8,
@@ -51,7 +51,7 @@ export const IMGS = {
         {
             "id": 9,
             "name": "许 亮",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E8%AE%B8%E4%BA%AE.jpg?Expires=1569583786&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=5s5k3YhLKRPB6p5lkEN7D6rMiN8%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E8%AE%B8%E4%BA%AE.jpg"
         },
         {
             "id": 10,
@@ -61,7 +61,7 @@ export const IMGS = {
         {
             "id": 11,
             "name": "任怀伟",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E4%BB%BB%E6%80%80%E4%BC%9F.jpg?Expires=1569583634&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=ZDaV9fUi5MfJ3g2Og8wguPa5%2FUE%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E4%BB%BB%E6%80%80%E4%BC%9F.jpg"            
         },
         {
             "id": 12,
@@ -91,7 +91,7 @@ export const IMGS = {
         {
             "id": 17,
             "name": "朱鹏亮",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E6%9C%B1%E9%B9%8F%E4%BA%AE.jpg?Expires=1569583753&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=a5joSto8jzHy3Iz%2F3Od1zJBZUdc%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E6%9C%B1%E9%B9%8F%E4%BA%AE.jpg"
         },
         {
             "id": 18,
@@ -166,7 +166,7 @@ export const IMGS = {
         {
             "id": 32,
             "name": "胡立瑶",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E8%83%A1%E7%AB%8B%E7%91%B6.jpg?Expires=1569583770&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=tgObXG8gMbZqGx0SnS1r4A4GcvA%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E8%83%A1%E7%AB%8B%E7%91%B6.jpg"
         },
         {
             "id": 33,
@@ -242,12 +242,12 @@ export const IMGS = {
         {
             "id": 1,
             "name": "蒋湘凤",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/001.jpg?Expires=1569584737&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=vxHNVfmGPjje2gbIiDHeC7XEtLs%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/001.jpg"
         },
         {
             "id": 2,
             "name": "蒋湘凤",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/002.jpg?Expires=1569584745&OSSAccessKeyId=TMP.hXR9dZj7xfAj6FD1iCLpNZr2L3YUayW3yZttjUTdn1MzD1rpcS2s5astioWqJf94FfWyiyHk7jGToZbjNUU3Z3LB4tZMksbri7yANhvWVxecCYN1hEMnoWRuFqKcze.tmp&Signature=v9nEN98MEmrR5jd7YjfdZzbG1W8%3D"
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/002.jpg"
         },
     ]
 }
