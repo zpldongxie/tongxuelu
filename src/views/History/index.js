@@ -2,7 +2,7 @@
  * @Description: 共同的回忆
  * @Author: zpl
  * @Date: 2019-09-29 10:18:31
- * @LastEditTime: 2019-09-29 12:34:00
+ * @LastEditTime: 2019-09-29 14:11:12
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -24,7 +24,7 @@ export default class History extends Component {
                 <Carousel autoplay effect="fade">
                     {
                         imgList.map((img, index) => <div key={index}>
-                            <div className='img' style={{ backgroundImage: `url(${img.pic})` }}>1</div>
+                            <div className='img' style={{ backgroundImage: `url(${img.pic})` }}>&nbsp;</div>
                         </div>
                         )
                     }
