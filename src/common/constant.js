@@ -2,11 +2,23 @@
  * @Description: 全局常量
  * @Author: zpl
  * @Date: 2019-09-27 17:36:50
- * @LastEditTime: 2019-09-27 19:39:32
+ * @LastEditTime: 2019-09-29 09:43:22
  * @LastEditors: zpl
  */
 export const IMGS = {
     'heying': 'https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/heying.jpg',
+    teacher: [
+        {
+            "id": 1,
+            "name": "蒋湘凤",
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/001.jpg"
+        },
+        {
+            "id": 2,
+            "name": "蒋湘凤",
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/002.jpg"
+        },
+    ],
     students: [
         {
             "id": 1,
@@ -61,7 +73,7 @@ export const IMGS = {
         {
             "id": 11,
             "name": "任怀伟",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E4%BB%BB%E6%80%80%E4%BC%9F.jpg"            
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E4%BB%BB%E6%80%80%E4%BC%9F.jpg"
         },
         {
             "id": 12,
@@ -237,17 +249,21 @@ export const IMGS = {
             "id": 46,
             "name": "杨 勇",
             "pic": ""
-        }],
-    teacher: [
-        {
-            "id": 1,
-            "name": "蒋湘凤",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/001.jpg"
-        },
-        {
-            "id": 2,
-            "name": "蒋湘凤",
-            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/teacher/002.jpg"
-        },
+        }
+    ],
+    history: [
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/5f67d1cbbd545a54ee61ec286dff2a7.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/6e4be13cd048b9b7bfa58f063a0b656.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/7897e000a51a8a2058351e1387018cc.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/86fe3de52ba57d3aab967d8fc300ee4.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/9e386c4bc5d0ab50e209b027424e3dd.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/a8e906813323f1584b6a9319bbd381c.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/c6bef67e862fc32facd406fd0abea26.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/cbbeba8ea0ce3d37e72468c31edf91b.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/ded999b115e3336b7edf3397f9067b7.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/e5f002be536fbdb352c12fe60809456.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/eccec95c7d17688a541ad663ce0e7ba.jpg" },
+        { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/fac20c6f1b12c16e043c8b9667246a1.jpg" }
+
     ]
 }

@@ -2,7 +2,7 @@
  * @Description: 页面容器，负责控制多个页面之前的切换
  * @Author: zpl
  * @Date: 2019-09-22 19:19:01
- * @LastEditTime: 2019-09-25 15:27:19
+ * @LastEditTime: 2019-09-29 10:20:57
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -15,6 +15,7 @@ import { nextPage, prevPage, gotoPage } from '../../actions/pageConAction'
 import Cover from '@/views/Cover'
 import Album from '@/views/Album'
 import AddrBook from '@/views/AddrBook'
+import History from '@/views/History'
 import Storys from '@/views/Storys'
 
 import { bling } from '../../util'
@@ -87,6 +88,15 @@ class Comp extends Component {
                             appear={true}
                         >
                             <AddrBook />
+                        </CSSTransition>
+                        <CSSTransition
+                            in={pageName === 'History'}
+                            timeout={1000}
+                            classNames='fade'
+                            unmountOnExit
+                            appear={true}
+                        >
+                            <History />
                         </CSSTransition>
                         <CSSTransition
                             in={pageName === 'Storys'}

@@ -2,7 +2,7 @@
  * @Description: webpack.config
  * @Author: zpl
  * @Date: 2019-09-18 21:45:22
- * @LastEditTime: 2019-09-27 17:57:07
+ * @LastEditTime: 2019-09-29 11:57:29
  * @LastEditors: zpl
  */
 const path = require('path');
@@ -53,7 +53,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.less$/,
+                test: /\.less|css$/,
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
             {

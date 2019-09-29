@@ -2,7 +2,7 @@
  * @Description: 页面窗口状态维护，实例化为store对象
  * @Author: zpl
  * @Date: 2019-09-22 20:46:48
- * @LastEditTime: 2019-09-22 21:24:52
+ * @LastEditTime: 2019-09-29 10:21:52
  * @LastEditors: zpl
  */
 import { createStore } from 'redux'
@@ -10,7 +10,7 @@ import { createStore } from 'redux'
 const initialState = {
     pageIndex: 0,
     pageName: 'Cover',
-    pageList: ['Cover', 'Album', 'AddrBook', 'Storys']
+    pageList: ['Cover', 'Album', 'AddrBook', 'History', 'Storys']
 }
 
 const reducer = (state = initialState, action) => {
