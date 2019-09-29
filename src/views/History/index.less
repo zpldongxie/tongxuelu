@@ -1,4 +1,5 @@
 .ant-carousel {
+    border: 1px solid #666;
     .slick-slide {
         text-align : center;
         height     : calc( 100vh - 8rem );
@@ -13,6 +14,27 @@
         }
     }
 } 
+
+.showBig {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 0;
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 100ms ease-in-out;
+    &.show {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+}
 
 @media only screen and (max-width: 500px){
     .route h3 {        

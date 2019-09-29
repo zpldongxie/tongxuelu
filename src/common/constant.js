@@ -2,7 +2,7 @@
  * @Description: 全局常量
  * @Author: zpl
  * @Date: 2019-09-27 17:36:50
- * @LastEditTime: 2019-09-29 09:43:22
+ * @LastEditTime: 2019-09-29 18:30:01
  * @LastEditors: zpl
  */
 export const IMGS = {
@@ -265,5 +265,21 @@ export const IMGS = {
         { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/eccec95c7d17688a541ad663ce0e7ba.jpg" },
         { pic: "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/historys/fac20c6f1b12c16e043c8b9667246a1.jpg" }
 
+    ],
+    story: [
+        {
+            title: '小胡同学婚礼小聚',
+            description: '',
+            pics: [
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/323dad18c6721387725913ac0eca717.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/46e7c6526af7134eabd9becb617b0e1.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/56a1f90c2328f4c4afd0eca307a8b79.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/7734669654d5715867af2639f52038b.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/83e11af1c616b28c600d0e8964947b9.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/9337b81c0e50ec1beb1a763e67d52eb.jpg",
+                "http://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/storys/%E8%83%A1%E7%AB%8B%E7%91%B6%E7%BB%93%E5%A9%9A/ba28157b2daa9d681e92675d3d6c6d3.jpg"
+
+            ]
+        }
     ]
 }

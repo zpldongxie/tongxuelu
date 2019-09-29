@@ -1,0 +1,59 @@
+.listCon {
+    .ant-card {
+        margin-bottom: 1rem;
+
+        .ant-card-cover {
+            height: 10rem;
+
+            .ant-carousel {
+                border: none;
+
+                .slick-slider {
+                    .slick-slide {
+                        height     : 10rem;
+                        line-height: initial;
+
+                        * {
+                            height         : 100%;
+                            width          : 100%;
+                            background-size: cover;
+                            transition     : all 1.5s ease-in-out;
+                        }
+
+                        .img {
+                            display: block;
+                            margin : 0;
+                        }
+                    }
+
+                    .slick-slide.slick-active .img {
+                        height: 120%;
+                        width : 120%;
+                        margin: -10%;
+                    }
+                }
+            }
+        }
+
+        .ant-card-body {}
+    }
+}
+
+.infoList {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    bottom    : 0;
+    right     : 0;
+    overflow-y: auto;
+    z-index   : 1;
+
+    .anticon {
+        position : fixed;
+        z-index  : 2;
+        left     : 1rem;
+        top      : 1rem;
+        font-size: 2rem;
+        color    : rgba(0, 0, 0, 0.45);
+    }
+}
