@@ -2,7 +2,7 @@
  * @Description: 页面容器，负责控制多个页面之前的切换
  * @Author: zpl
  * @Date: 2019-09-22 19:19:01
- * @LastEditTime: 2019-09-29 10:20:57
+ * @LastEditTime: 2019-10-22 17:27:30
  * @LastEditors: zpl
  */
 import React, { Component } from 'react'
@@ -10,8 +10,9 @@ import { CSSTransition } from 'react-transition-group'
 import { connect } from 'react-redux'
 
 import './index.less';
-import { nextPage, prevPage, gotoPage } from '../../actions/pageConAction'
+import { nextPage, prevPage } from '../../actions/pageConAction'
 
+import FloatNav from '../FloatNav'
 import Cover from '@/views/Cover'
 import Album from '@/views/Album'
 import AddrBook from '@/views/AddrBook'
@@ -38,7 +39,7 @@ class Comp extends Component {
                 return <a
                     className='left'
                     onClick={() => {
-                        bling(event.target, 0.3);
+                        bling(event.target, 0.5, 0.3);
                         this.props.dispatch(prevPage())
                     }}></a>
             } else {
@@ -50,7 +51,7 @@ class Comp extends Component {
                 return <a
                     className='right'
                     onClick={() => {
-                        bling(event.target, 0.3);
+                        bling(event.target, 0.5, 0.3);
                         this.props.dispatch(nextPage())
                     }}></a>
             } else {
@@ -60,6 +61,7 @@ class Comp extends Component {
 
         return (
             <div>
+                <FloatNav />
                 {
                     <div className='middleCon'>
                         <CSSTransition

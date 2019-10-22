@@ -2,7 +2,7 @@
  * @Description: 工具类
  * @Author: zpl
  * @Date: 2019-09-23 15:51:34
- * @LastEditTime: 2019-09-23 16:33:14
+ * @LastEditTime: 2019-10-22 17:26:19
  * @LastEditors: zpl
  */
 
@@ -38,12 +38,13 @@ export const splitArray = (arr, num) => {
  * 闪烁效果
  *
  * @param {Dom} dom dom对象
+ * @param {Number} opacity 初始透明度
  * @param {Number} time 闪烁动画时长，单位为秒
  */
-export const bling = (dom, time) => {
+export const bling = (dom, opacity, time) => {
     dom.style.transition = `all ${time * 1000}ms ease-in-out`;
-    dom.style.opacity = 1;
+    dom.style.opacity = opacity > 0.8 ? 0.5 : 1;
     setTimeout(() => {
-        dom.style.opacity = .5;
+        dom.style.opacity = opacity;
     }, time * 1000);
 }

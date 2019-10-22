@@ -1,0 +1,52 @@
+.floatNav {
+    .btn {
+        cursor: pointer;
+        position: fixed;
+        top: 10%;
+        right: .5rem;
+        width: 1.4rem;
+        border: 1px solid rgba(0,0,0,0.3);
+        color: rgba(0,0,0,0.3);
+        border-radius: 5px;
+        padding: .2rem;
+        z-index: 3;
+    }
+    .nav {        
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        background: rgba(0,0,0,0.2);
+        transition: bottom .4s ease-in-out;
+        z-index: 3;
+        &.hidden {
+            bottom: 100%;
+        }
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 0;
+            margin: 0;
+            width: 60%;
+            background: rgba(220,240,190,0.6);
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+            li {
+                cursor: pointer;
+                list-style: none;
+                padding: .4rem;
+                color: #37611d;
+                &.active {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
