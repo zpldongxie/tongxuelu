@@ -2,8 +2,8 @@
  * @Description: 全局常量
  * @Author: zpl
  * @Date: 2019-09-27 17:36:50
- * @LastEditTime: 2019-09-29 18:30:01
- * @LastEditors: zpl
+ * @LastEditTime : 2020-01-29 22:14:46
+ * @LastEditors  : zpl
  */
 export const IMGS = {
     'heying': 'https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/heying.jpg',
@@ -53,7 +53,7 @@ export const IMGS = {
         {
             "id": 5,
             "name": "李 凡",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E6%9D%8E%20%E5%87%A1.jpg"
         },
         {
             "id": 6,
@@ -143,17 +143,17 @@ export const IMGS = {
         {
             "id": 23,
             "name": "王尚睿",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E7%8E%8B%E5%B0%9A%E7%9D%BF.jpg"
         },
         {
             "id": 24,
             "name": "苗 蕾",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E8%8B%97%E8%95%BE.jpg"
         },
         {
             "id": 25,
             "name": "寇栓玲",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%AF%87%E6%A0%93%E7%8E%B2.jpg"
         },
         {
             "id": 26,
@@ -183,7 +183,7 @@ export const IMGS = {
         {
             "id": 31,
             "name": "周平原",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%91%A8%E5%B9%B3%E5%8E%9F.jpg"
         },
         {
             "id": 32,
@@ -198,7 +198,7 @@ export const IMGS = {
         {
             "id": 34,
             "name": "张虎强",
-            "pic": ""
+            "pic": "https://zpl-images.oss-cn-beijing.aliyuncs.com/%E5%90%8C%E5%AD%A6%E5%BD%95%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/students/%E5%BC%A0%E8%99%8E%E5%BC%BA.jpg"
         },
         {
             "id": 35,

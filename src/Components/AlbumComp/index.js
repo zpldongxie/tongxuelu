@@ -2,8 +2,8 @@
  * @Description: 幻灯片影集
  * @Author: zpl
  * @Date: 2019-09-20 11:04:24
- * @LastEditTime: 2019-09-27 19:25:04
- * @LastEditors: zpl
+ * @LastEditTime : 2020-01-29 22:32:13
+ * @LastEditors  : zpl
  */
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
@@ -16,7 +16,8 @@ class AlbumComp extends Component {
         ...this.props,
         showIndex: 0,
         pause: false,
-        interval: null
+        interval: null,
+        speed: Math.floor(Math.random() * (3000)) + 4000
     }
 
     showNextImg() {
@@ -44,7 +45,7 @@ class AlbumComp extends Component {
                 clearInterval(this.interval)
             }
             this.showNextImg()
-        }, 3000);
+        }, this.state.speed);
     }
 
     componentDidUpdate(){
@@ -55,7 +56,7 @@ class AlbumComp extends Component {
                     clearInterval(this.interval)
                 }
                 this.showNextImg()
-            }, 3000);
+            }, this.state.speed);
         }
     }
 

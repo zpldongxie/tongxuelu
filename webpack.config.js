@@ -2,8 +2,8 @@
  * @Description: webpack.config
  * @Author: zpl
  * @Date: 2019-09-18 21:45:22
- * @LastEditTime: 2019-09-29 11:57:29
- * @LastEditors: zpl
+ * @LastEditTime : 2020-01-29 22:17:33
+ * @LastEditors  : zpl
  */
 const path = require('path');
 const webpack = require('webpack')
@@ -18,14 +18,14 @@ const dirs = {
 
 const htmlPlugin = new HtmlWebPackPlugin({
     template: './index.html',
-    filename: path.resolve(__dirname, 'dist/index.html'),
+    filename: path.resolve(__dirname, 'docs/index.html'),
     favicon: './favicon.ico'
 });
 
 // 开发虚拟服务器，支持热更新
 const devServer = {
     hot: true, // 热替换
-    contentBase: path.join(__dirname, 'dist'), // server文件的根目录
+    contentBase: path.join(__dirname, 'docs'), // server文件的根目录
     compress: true, // 开启gzip
     host: 'localhost',
     port: 8080, // 端口
@@ -38,7 +38,7 @@ const hotModulePlugin = new webpack.HotModuleReplacementPlugin();
 module.exports = {
     entry: './app.js', // 入口文件
     output: {
-        path: path.resolve(__dirname, 'dist'), // 定义输出目录
+        path: path.resolve(__dirname, 'docs'), // 定义输出目录
         filename: 'tong-xue-lu.bundle.js', // 定义输出文件名称
         publicPath: './'
     },

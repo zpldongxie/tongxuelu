@@ -2,8 +2,8 @@
  * @Description: 事迹
  * @Author: zpl
  * @Date: 2019-09-18 18:26:50
- * @LastEditTime: 2019-09-29 18:27:51
- * @LastEditors: zpl
+ * @LastEditTime : 2020-01-29 22:45:44
+ * @LastEditors  : zpl
  */
 import React, { Component } from 'react'
 import { Carousel } from 'antd'
@@ -42,11 +42,14 @@ class InfoList extends Component {
             <div className='infoList'>
                 <Icon type="import" onClick={backHandler} />
                 {imgList.map(
-                    (pic, index) => {
-                        return <Card key={index}>
-                            <img style={{maxWidth: '100%', maxHeight: '100%'}} src={pic} />
-                        </Card>
-                    }
+                    (pic, index) => (
+                        <Card
+                            key={pic}
+                            style={{ width: '80%', margin: '0 auto' }}
+                            cover={<img alt="example" src={pic} />}
+                        >
+                            <Meta title="想说点什么吗。。。" description="开心就好" />
+                        </Card>)
                 )}
             </div>
         )
