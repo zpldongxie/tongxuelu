@@ -5,15 +5,11 @@
  * @LastEditTime: 2019-09-24 11:37:29
  * @LastEditors: zpl
  */
-export const showBigImg = (bigImg) => {
-    return {
-        type: 'SHOWBIGIMG',
-        bigImg: bigImg
-    }
-}
+export const showBigImg = (bigImg) => ({
+  type: 'SHOWBIGIMG',
+  bigImg,
+});
 
-export const hideBigImg = () => {
-    return {
-        type: 'HIDEBIGIMG'
-    }
-}
+export const hideBigImg = () => ({
+  type: 'HIDEBIGIMG',
+});

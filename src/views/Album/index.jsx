@@ -93,7 +93,7 @@ Comp.defaultProps = {
 
 const Album = connect(
   (state) => ({
-    showBigImg: state.showBigImg,
+    isShowBigImg: state.isShowBigImg,
     bigImg: state.bigImg,
   }),
 )(Comp);
