@@ -22,13 +22,14 @@ export default class Layout extends Component {
     };
   }
 
+  componentDidUpdate() {
+    this.chengeMusicPlay();
+  }
+
   chengeMusicPlay() {
     const { musicPlay } = this.state;
-    if (musicPlay) this.rap.audioEl.pause();
-    else this.rap.audioEl.play();
-    this.setState({
-      musicPlay: !musicPlay,
-    });
+    if (musicPlay) this.rap.audioEl.play();
+    else this.rap.audioEl.pause();
   }
 
   render() {
@@ -39,7 +40,11 @@ export default class Layout extends Component {
         {children}
         <div
           className="musicCon"
-          onClick={() => { this.chengeMusicPlay(); }}
+          onClick={() => {
+            this.setState({
+              musicPlay: !musicPlay,
+            });
+          }}
         >
           <img src={musicIcon} alt="" className={musicPlay ? 'enable' : 'disable'} />
           <ReactAudioPlayer

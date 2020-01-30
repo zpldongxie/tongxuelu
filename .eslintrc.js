@@ -2,7 +2,7 @@
  * @description: 
  * @author: zpl
  * @Date: 2020-01-30 14:36:34
- * @LastEditTime : 2020-01-30 15:40:50
+ * @LastEditTime : 2020-01-30 18:12:07
  * @LastEditors  : zpl
  */
 const path = require('path');
@@ -39,7 +39,7 @@ module.exports = {
     'react',
   ],
   'settings': {
-    "import/resolver": {
+    'import/resolver': {
       'alias': {
         'map': [
           ['@', dirs.src],
@@ -50,10 +50,14 @@ module.exports = {
     }
   },
   'rules': {
-    'import/no-extraneous-dependencies': ["error", { "devDependencies": true }],
+    'max-len' : ['error', {code : 150}],
+    'import/no-extraneous-dependencies': ['error', { 'devDependencies': true }],
     'react/forbid-prop-types': 0,
     'linebreak-style': 0,
-    "jsx-a11y/no-static-element-interactions":0,
-    "jsx-a11y/click-events-have-key-events":0,
+    'jsx-a11y/no-static-element-interactions':0,
+    'jsx-a11y/click-events-have-key-events':0,
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'import/no-named-as-default': 0,
+    'import/no-named-as-default-member': 0
   },
 };

@@ -2,13 +2,13 @@
  * @Description: 共同的回忆
  * @Author: zpl
  * @Date: 2019-09-29 10:18:31
- * @LastEditTime: 2019-09-29 17:12:10
- * @LastEditors: zpl
+ * @LastEditTime : 2020-01-30 17:42:28
+ * @LastEditors  : zpl
  */
 import React, { Component } from 'react'
 import { Carousel } from 'antd'
 
-import { IMGS } from '../../common/constant'
+import IMGS from '../../common/constant'
 import './index.less'
 
 export default class History extends Component {

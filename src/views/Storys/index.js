@@ -2,14 +2,14 @@
  * @Description: 事迹
  * @Author: zpl
  * @Date: 2019-09-18 18:26:50
- * @LastEditTime : 2020-01-29 22:45:44
+ * @LastEditTime : 2020-01-30 17:42:50
  * @LastEditors  : zpl
  */
 import React, { Component } from 'react'
 import { Carousel } from 'antd'
 import { Card, Icon } from 'antd';
 
-import { IMGS } from '../../common/constant'
+import IMGS from '../../common/constant'
 import './index.less'
 
 const { Meta } = Card;
